@@ -1,0 +1,146 @@
+/*
+Mobile: 375px
+Desktop: 1440px
+*/
+
+:root {
+  /* Fonts */
+  --f-size: 16px;
+  --ff-text: 'Overpass', sans-serif;
+  --ff-highlights: 'Ubuntu', sans-serif;
+
+  /* Primary Colors */
+  --c-red-200: hsl(355, 100%, 74%); /* CTA hover background */
+  --c-red-400: hsl(356, 100%, 66%); /* CTA text */
+  --c-blue-800: hsl(208, 49%, 24%); /* Headings */
+
+  /* Neutral Colors */
+  --c-white: hsl(0, 0%, 100%); /* Text */
+  --c-gray-300: hsl(240, 2%, 79%); /* Footer text */
+  --c-gray-600: hsl(207, 13%, 34%); /* Body copy */
+  --c-black-800: hsl(240, 10%, 16%); /* Footer background */
+
+  /* Gradients */
+  --g-red: linear-gradient(
+    to right,
+    hsl(13, 100%, 72%),
+    hsl(353, 100%, 62%)
+  ); /* Intro */
+  --g-blue: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%)); /* Body */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: auto;
+}
+
+body {
+  font-family: var(--ff-text);
+}
+
+header {
+  width: 100%;
+  height: 600px; /*remove*/
+  padding: 4rem;
+  background-position: top -84rem left -26.5rem, center;
+  background-image: url(../images/bg-pattern-intro.svg), var(--g-red);
+  border-bottom-left-radius: 5rem;
+  color: var(--c-white);
+
+  .btn {
+    color: var(--c-red-400);
+    background: var(--c-white);
+    text-decoration: none;
+    font-weight: 700;
+    display: block;
+    width: 8.5rem;
+    height: 3rem;
+    // padding: 1rem 2.5rem;
+    border-radius: 2rem;
+
+    &:hover {
+      color: var(--c-white);
+      background: var(--c-red-200);
+    }
+  }
+
+  nav {
+    width: calc(100% - 12rem);
+    margin: 0 6rem;
+    font-weight: 700;
+    font-family: var(--ff-highlights);
+    color: var(--c-gray-300);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img.logo {
+      margin-right: 3rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul.menu {
+      width: 100%;
+      list-style: none;
+      display: flex;
+
+      li {
+        position: relative;
+        margin: 0 1rem;
+        cursor: pointer;
+
+        &:after {
+          content: url('../images/icon-arrow-light.svg');
+          margin-left: 0.5rem;
+        }
+
+        &:hover {
+          color: var(--c-white);
+          text-decoration: underline;
+        }
+      }
+    }
+
+    ul.user {
+      list-style: none;
+      width: 310px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .jumbo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      font-size: 4rem;
+    }
+
+    p {
+      color: var(--c-gray-300);
+      font-size: 1.5rem;
+      margin: 2rem 0;
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
