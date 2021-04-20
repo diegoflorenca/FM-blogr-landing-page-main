@@ -1,0 +1,47 @@
+/* Buttons */
+.btn {
+  color: var(--c-red-400);
+  background-color: var(--c-white);
+  font-family: var(--ff-highlights);
+  font-weight: 700;
+  padding: 1rem 2rem;
+  margin-left: 1rem;
+  border-radius: 2rem;
+}
+
+.btn:hover {
+  color: var(--c-white);
+  background: var(--c-red-200);
+}
+
+.secondary-btn {
+  background: none;
+  border: var(--c-white) 1px solid;
+  color: var(--c-white);
+}
+
+.secondary-btn:hover {
+  background: var(--c-white);
+  color: var(--c-red-200);
+}
+
+.gradient-btn {
+  color: var(--c-white);
+  background: -webkit-gradient(linear, left top, right top, from(var(--g-red)));
+  background: linear-gradient(to right, var(--g-red));
+}
+
+.gradient-btn:hover {
+  background: -webkit-gradient(linear, right top, left top, from(var(--g-red)));
+  background: linear-gradient(to left, var(--g-red));
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=auxiliary.css.map */
