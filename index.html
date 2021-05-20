@@ -29,8 +29,11 @@
           </label>
           <ul class="menu">
             <li class="dropdown">
-              <a href="#" class="nav-link">Products</a> <span></span>
-              <ul class="dropdown__hover">
+              <a href="#" class="nav-link" onclick="toggleSubmenu('products')"
+                >Products</a
+              >
+              <span class="span-products"></span>
+              <ul class="dropdown__hover products">
                 <li><a href="#">Overview</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Marketplace</a></li>
@@ -39,8 +42,11 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="nav-link">Company</a> <span></span>
-              <ul class="dropdown__hover">
+              <a href="#" class="nav-link" onclick="toggleSubmenu('company')"
+                >Company</a
+              >
+              <span class="span-company"></span>
+              <ul class="dropdown__hover company">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Team</a></li>
                 <li><a href="#">Blog</a></li>
@@ -48,8 +54,11 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="nav-link">Connect</a> <span></span>
-              <ul class="dropdown__hover">
+              <a href="#" class="nav-link" onclick="toggleSubmenu('connect')"
+                >Connect</a
+              >
+              <span class="span-connect"></span>
+              <ul class="dropdown__hover connect">
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Newsletter</a></li>
                 <li><a href="#">LinkedIn</a></li>
@@ -99,5 +108,20 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+    <script>
+      const toggleSubmenu = (menuItem) => {
+        const checkActive = document.querySelector(`.${menuItem}.active-menu`);
+        const span = document.querySelector(`.span-${menuItem}`);
+
+        if (checkActive) {
+          checkActive.classList.remove('active-menu');
+          span.style.transform = 'rotate(0deg)';
+        } else {
+          const activeMenu = document.querySelector(`.${menuItem}`);
+          activeMenu.classList.add('active-menu');
+          span.style.transform = 'rotate(180deg)';
+        }
+      };
+    </script>
   </body>
 </html>
