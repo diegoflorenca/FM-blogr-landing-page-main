@@ -1,0 +1,71 @@
+.text-content {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 0 1.5rem;
+
+  h3 {
+    color: var(--c-blue-800);
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    padding-bottom: 1rem;
+  }
+
+  p {
+    color: var(--c-gray-600);
+    line-height: 1.75rem;
+  }
+}
+
+.icon {
+  width: 100%;
+  margin-top: 1.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: fit;
+  min-height: 331px;
+}
+
+.editor-icon {
+  background-image: url('../images/illustration-editor-mobile.svg');
+}
+
+.application-icon {
+  background-image: url('../images/illustration-laptop-mobile.svg');
+}
+
+.spotlight {
+  position: relative;
+  margin-top: 14rem;
+  text-align: center;
+
+  .spot-content {
+    padding-top: 220px;
+    background-image: url('../images/bg-pattern-circles.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    background-color: var(--c-blue-600);
+    border-radius: 0 5rem 0 5rem;
+
+    h3 {
+      color: var(--c-white);
+      font-size: 2.5rem;
+      letter-spacing: -0.1rem;
+      margin-bottom: 2.25rem;
+    }
+    p {
+      padding: 0 2rem;
+      color: var(--c-gray-200);
+      line-height: 1.75rem;
+      padding-bottom: 7.75rem;
+    }
+  }
+
+  .phones-icon {
+    position: absolute;
+    width: 100%;
+    max-width: 450px;
+    transform: translate(-50%, -50%);
+  }
+}

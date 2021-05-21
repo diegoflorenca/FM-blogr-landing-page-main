@@ -70,7 +70,7 @@
           </ul>
         </nav>
         <div class="jumbo">
-          <h2>A modern publishing platform</h2>
+          <h2><span class="line-break">A modern</span> publishing platform</h2>
           <p>Grow your audience and build your online brand</p>
           <div class="buttons">
             <a href="#" class="btn">Start for Free</a>
@@ -78,50 +78,99 @@
           </div>
         </div>
       </header>
+      <section class="content">
+        <div class="text-content">
+          <h3>Designed for the future</h3>
+          <div class="icon editor-icon"></div>
+        </div>
+        <div class="text-content">
+          <h3>Introducing an extensible editor</h3>
+          <p>
+            Blogr features an exceedingly intuitive interface which lets you
+            focus on one thing: creating content. The editor supports management
+            of multiple blogs and allows easy manipulation of embeds such as
+            images, videos, and Markdown. Extensibility with plugins and themes
+            provide easy ways to add functionality or change the looks of a
+            blog.
+          </p>
+        </div>
+        <div class="text-content">
+          <h3>Robust content management</h3>
+          <p>
+            Flexible content management enables users to easily move through
+            posts. Increase the usability of your blog by adding customized
+            categories, sections, format, or flow. With this functionality,
+            you’re in full control.
+          </p>
+        </div>
+        <div class="spotlight">
+          <img
+            class="phones-icon"
+            src="./images/illustration-phones.svg"
+            alt="Two vector Iphones"
+          />
+          <div class="spot-content">
+            <h3>State of the Art Infrastructure</h3>
+            <p>
+              With reliability and speed in mind, worldwide data centers provide
+              the backbone for ultra-fast connectivity. This ensures your site
+              will load instantly, no matter where your readers are, keeping
+              your site competitive.
+            </p>
+          </div>
+        </div>
+        <div class="icon application-icon"></div>
+        <div class="text-content">
+          <h3>Free, open, simple</h3>
+          <p>
+            Blogr is a free and open source application backed by a large
+            community of helpful developers. It supports features such as code
+            syntax highlighting, RSS feeds, social media integration,
+            third-party commenting tools, and works seamlessly with Google
+            Analytics. The architecture is clean and is relatively easy to
+            learn.
+          </p>
+        </div>
+        <div class="text-content">
+          <h3>Powerful tooling</h3>
+          <p>
+            Batteries included. We built a simple and straightforward CLI tool
+            that makes customization and deployment a breeze, but capable of
+            producing even the most complicated sites.
+          </p>
+        </div>
+      </section>
+      <footer>
+        <img class="logo" src="./images/logo.svg" alt="Blogr logo" />
+        <ul>
+          <li class="ul-title">Product</li>
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Marketplace</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Integrations</a></li>
+        </ul>
+        <ul>
+          <li class="ul-title">Company</li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+        <ul>
+          <li class="ul-title">Connect</li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </footer>
     </div>
-    <hr />
-    Designed for the future Introducing an extensible editor Blogr features an
-    exceedingly intuitive interface which lets you focus on one thing: creating
-    content. The editor supports management of multiple blogs and allows easy
-    manipulation of embeds such as images, videos, and Markdown. Extensibility
-    with plugins and themes provide easy ways to add functionality or change the
-    looks of a blog. Robust content management Flexible content management
-    enables users to easily move through posts. Increase the usability of your
-    blog by adding customized categories, sections, format, or flow. With this
-    functionality, you’re in full control. State of the Art Infrastructure With
-    reliability and speed in mind, worldwide data centers provide the backbone
-    for ultra-fast connectivity. This ensures your site will load instantly, no
-    matter where your readers are, keeping your site competitive. Free, open,
-    simple Blogr is a free and open source application backed by a large
-    community of helpful developers. It supports features such as code syntax
-    highlighting, RSS feeds, social media integration, third-party commenting
-    tools, and works seamlessly with Google Analytics. The architecture is clean
-    and is relatively easy to learn. Powerful tooling Batteries included. We
-    built a simple and straightforward CLI tool that makes customization and
-    deployment a breeze, but capable of producing even the most complicated
-    sites. Product Overview Pricing Marketplace Features Integrations Company
-    About Team Blog Careers Connect Contact Newsletter LinkedIn
-
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
-    <script>
-      const toggleSubmenu = (menuItem) => {
-        const checkActive = document.querySelector(`.${menuItem}.active-menu`);
-        const span = document.querySelector(`.span-${menuItem}`);
-
-        if (checkActive) {
-          checkActive.classList.remove('active-menu');
-          span.style.transform = 'rotate(0deg)';
-        } else {
-          const activeMenu = document.querySelector(`.${menuItem}`);
-          activeMenu.classList.add('active-menu');
-          span.style.transform = 'rotate(180deg)';
-        }
-      };
-    </script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
