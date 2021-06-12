@@ -21,54 +21,46 @@
   <body>
     <div class="wrapper">
       <header>
-        <nav class="nav-mobile">
+        <div id="brand-nav">
           <img class="logo" src="./images/logo.svg" alt="Blogr logo" />
-          <input type="checkbox" name="" id="nav-toggle" class="nav-toggle" />
-          <label for="nav-toggle" class="nav-toggle-label">
-            <span></span>
-          </label>
-          <ul class="menu">
-            <li class="dropdown">
-              <a href="#" class="nav-link" onclick="toggleSubmenu('products')"
-                >Products</a
-              >
-              <span class="span-products"></span>
-              <ul class="dropdown__hover products">
-                <li><a href="#">Overview</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Marketplace</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Integrations</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="nav-link" onclick="toggleSubmenu('company')"
-                >Company</a
-              >
-              <span class="span-company"></span>
-              <ul class="dropdown__hover company">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Careers</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="nav-link" onclick="toggleSubmenu('connect')"
-                >Connect</a
-              >
-              <span class="span-connect"></span>
-              <ul class="dropdown__hover connect">
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Newsletter</a></li>
-                <li><a href="#">LinkedIn</a></li>
-              </ul>
-            </li>
-            <hr />
-            <li><a href="#" class="nav-link">Login</a></li>
-            <li><a class="btn gradient-btn" href="#">Sign Up</a></li>
-          </ul>
-        </nav>
+          <nav>
+            <!-- <button id="btn-mobile"></button> -->
+            <ul>
+              <li>
+                Products
+                <ul>
+                  <li>Overview</li>
+                  <li>Pricing</li>
+                  <li>Marketplace</li>
+                  <li>Features</li>
+                  <li>Integrations</li>
+                </ul>
+              </li>
+              <li>
+                Company
+                <ul>
+                  <li>About</li>
+                  <li>Team</li>
+                  <li>Blog</li>
+                  <li>Careers</li>
+                </ul>
+              </li>
+              <li>
+                Connect
+                <ul>
+                  <li>Contact</li>
+                  <li>Newsletter</li>
+                  <li>LinkedIn</li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>Login</li>
+              <li>Sign Up</li>
+            </ul>
+          </nav>
+        </div>
+
         <div class="jumbo">
           <h2><span class="line-break">A modern</span> publishing platform</h2>
           <p>Grow your audience and build your online brand</p>
@@ -164,12 +156,12 @@
           <li><a href="#">LinkedIn</a></li>
         </ul>
       </footer>
-    </div>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. <br />Coded by <a href="#">Diego Felipe FLorença</a>.
+      </div>
     </div>
     <script src="./js/app.js"></script>
   </body>

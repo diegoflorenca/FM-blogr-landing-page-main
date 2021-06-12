@@ -10,112 +10,6 @@ header {
     linear-gradient(to bottom, var(--g-red));
   border-bottom-left-radius: 5rem;
 
-  nav {
-    position: relative;
-    padding: 3rem 1.5rem;
-    font-family: var(--ff-highlights);
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    .nav-toggle {
-      display: none;
-
-      &:checked ~ ul.menu {
-        visibility: visible;
-        opacity: 1;
-        transform: scale(1, 1);
-      }
-    }
-
-    .nav-toggle-label {
-      width: 2rem;
-      height: 1.5rem;
-      cursor: pointer;
-      background: url('../images/icon-hamburger.svg') no-repeat;
-    }
-
-    ul.menu {
-      position: absolute;
-      top: 5rem;
-      left: 0;
-      width: calc(100% - 3rem);
-      padding: 1.5rem;
-      margin: 1.5rem;
-      list-style: none;
-      color: var(--c-gray-600);
-      transition: all 400ms ease-in-out;
-
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      visibility: hidden;
-      opacity: 0;
-      transform-origin: top;
-      transform: scale(1, 0);
-
-      background: var(--c-white);
-      border-radius: 0.5rem;
-      box-shadow: var(--menu-shadow);
-
-      li {
-        margin: 1rem;
-      }
-
-      .dropdown {
-        cursor: pointer;
-        width: 100%;
-        text-align: center;
-
-        span {
-          content: url('../images/icon-arrow-dark.svg');
-          margin-left: 0.5rem;
-          transition: transform 200ms ease-in-out;
-        }
-
-        ul.dropdown__hover {
-          list-style: none;
-          background: var(--c-gray-100);
-          border-radius: 0.5rem;
-          width: 100%;
-          text-align: center;
-          font-weight: 500;
-          flex-direction: column;
-          visibility: hidden;
-          transform-origin: top;
-          transform: scale(1, 0);
-          transition: transform 200ms ease-in-out;
-          opacity: 0;
-          height: 0;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-
-          li:hover {
-            cursor: pointer;
-            font-weight: 700;
-          }
-        }
-
-        ul.active-menu {
-          margin-top: 1rem;
-          padding: 0.5rem 0;
-          height: auto;
-          opacity: 1;
-          visibility: visible;
-          transform: scale(1, 1);
-        }
-      }
-
-      hr {
-        width: 100%;
-        margin-top: 0.5rem;
-        border-top: 1px solid var(--c-gray-300);
-      }
-    }
-  }
-
   .jumbo {
     margin-top: 2rem;
     display: flex;
@@ -144,7 +38,8 @@ header {
   }
 }
 
-/* Desktop Styling */
+// Desktop Styling
+
 // header {
 //   width: 100%;
 //   height: 100vh;

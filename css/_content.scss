@@ -36,16 +36,16 @@
 
 .spotlight {
   position: relative;
-  margin-top: 14rem;
+  margin-top: 16rem;
   text-align: center;
 
   .spot-content {
     padding-top: 220px;
-    background-image: url('../images/bg-pattern-circles.svg');
+    background-image: url('../images/bg-pattern-circles.svg'),
+      linear-gradient(to bottom, var(--g-blue));
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
-    background-color: var(--c-blue-600);
+    background-size: contain, 100%;
+    background-position: top -200px center, center;
     border-radius: 0 5rem 0 5rem;
 
     h3 {
