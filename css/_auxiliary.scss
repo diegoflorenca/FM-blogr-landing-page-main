@@ -6,13 +6,13 @@
   font-family: var(--ff-highlights);
   font-weight: 700;
   padding: 1rem 2rem;
-  margin-left: 1rem;
   border-radius: 2rem;
   transition: 300ms ease-in-out;
 
   &:hover {
     color: var(--c-white);
     background: var(--c-red-200);
+    text-decoration: none;
   }
 }
 
@@ -27,17 +27,7 @@
   }
 }
 
-.gradient-btn {
-  color: var(--c-white);
-  background: linear-gradient(to right, var(--g-red));
-
-  &:hover {
-    background: linear-gradient(to left, var(--g-red));
-  }
-}
-
 /* Text */
-
 .line-break::after {
   content: '\a';
   white-space: pre;

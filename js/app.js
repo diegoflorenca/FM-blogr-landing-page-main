@@ -1,13 +1,28 @@
-// Open and close mobile submenu
-const toggleSubmenu = (menuItem) => {
-  const checkActive = document.querySelector(`.${menuItem}.active-menu`);
-  const span = document.querySelector(`.span-${menuItem}`);
-  if (checkActive) {
-    checkActive.classList.remove('active-menu');
-    span.style.transform = 'rotate(0deg)';
-  } else {
-    const activeMenu = document.querySelector(`.${menuItem}`);
-    activeMenu.classList.add('active-menu');
-    span.style.transform = 'rotate(180deg)';
-  }
+const dropdowns = document.querySelectorAll('.dropdown');
+const btnMobile = document.querySelector('#btn-mobile');
+
+const openDropdown = (event) => {
+  event.currentTarget.classList.add('active');
 };
+
+const closeDropdown = (event) => {
+  event.currentTarget.classList.remove('active');
+};
+
+const toggleSubmenu = (event) => {
+  event.currentTarget.classList.toggle('active');
+};
+
+const toggleMenu = () => {
+  const nav = document.querySelector('nav');
+  nav.classList.toggle('active');
+  btnMobile.classList.toggle('active');
+};
+
+dropdowns.forEach((dropdown) => {
+  dropdown.addEventListener('mouseover', openDropdown);
+  dropdown.addEventListener('mouseout', closeDropdown);
+  dropdown.addEventListener('touchstart', toggleSubmenu);
+});
+
+btnMobile.addEventListener('touchstart', toggleMenu);

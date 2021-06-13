@@ -58,7 +58,7 @@ button {
 }
 
 /* Imports */
-@import './_auxiliary.scss', './_header.scss', './_content.scss';
+@import './nav', './_auxiliary.scss', './_header.scss', './_content.scss';
 
 body {
   background-color: var(--c-white);
